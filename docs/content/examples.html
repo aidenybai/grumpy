@@ -56,36 +56,33 @@
     <div class="content container container-boxed">
         <div class="row space-bottom-md">
             <div class="col span-2">
-                <h1 class="no-space-top">What's Wear?</h1>
-
-                Wear is a utility data structure module with significantly improved performance and ease-of-use.
-                <br /><br />
-                <ul>
-                    <li>🎉 Small file size (~1kb)</li>
-                    <li>⚡️ Blazing fast performance</li>
-                    <li>🚀 Minimal & intuitive API</li>
-                </ul>
-            </div>
-            <div class="col span-1 well">
-                <div class="space-bottom-md">
-                    <h3 class="no-space-top">Installation</h3>
-                    <p>Install Wear via <a href="https://www.npmjs.com/package/wear" target="_blank" rel="noopener noreferrer">NPM</a>.</p>
-                    <pre><code>npm i -s wear</code></pre>
-                </div>
+                <h1 class="no-space-top">Examples</h1>
             </div>
         </div>
         <div class="row">
             <div class="col span-2">
                 <div class="space-bottom-md">
-                    <h3 class="no-space-top">Usage</h3>
-                    <p>An example on creating and building with wear.</p>
+                    <h3 class="no-space-top">Examples</h3>
+                    <p>Declaring and deleting pairs.</p>
                     <pre><code>
 const Wear = require('wear');
 const group = new Wear();
  
-group.set('foo', 'bar');
+group.set('user', 'John Doe');
  
-group.get('foo'); // returns 'bar'
+group.get('user'); // returns 'John Doe'
+                    </code></pre>
+                    <p>Converting to Array.</p>
+                    <pre><code>
+const Wear = require('wear');
+const group = new Wear();
+ 
+group.set('user1', 'John Doe');
+group.set('user2', 'Mary Jane');
+group.set('user3', 'Joe Schmoe');
+ 
+group.array(); // returns ['John Doe', 'Mary Jane', 'Joe Schmoe']
+group.keyArray(); // returns ['user1', 'user2', 'user3']
                     </code></pre>
                 </div>
             </div>
