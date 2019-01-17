@@ -119,8 +119,6 @@ const clonedGroup = group.clone();
                     <h3 class="no-space-top">Manipulating groups</h3>
                     <p>Many of the methods on group are based on their namesake in Array.</p>
                     <pre><code>
-const wanted = 'John Doe';
-
 group.set('user1', 'John Doe');
 group.set('user2', 'Mary Jane');
 group.set('user3', 'Joe Schmoe');
@@ -130,7 +128,7 @@ group.filter(user => wanted.includes(user)); // returns Group {'user1' => 'John 
 group.map(user => user).join(', '); // returns 'John Doe, Mary Jane, Joe Schmoe'
 group.sort(); // returns Group {'user3' => 'Joe Schmoe', 'user1' => 'John Doe', 'user2' => 'Mary Jane'}
 
-group.some(user => wanted.includes(user)); // returns true
+group.some(user => 'John Doe'.includes(user)); // returns true
 group.every(user => user instanceof String); // returns true
 
 group.each(user => console.log(user)); // logs each name in the console
