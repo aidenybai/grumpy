@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <style>
+        .cover {
+            max-height: 350px;
+            /* overflow: hidden; */
+            text-align: center;
+            background-color: #20232b; /* #242530; */
+            background-image: url("img/tile-box-dark.png");
+            background-repeat: repeat;
+            margin-top: -50px;
+        }
+        .cover .tagline {
+            display: block;
+            color: #b4bccc;
+            font-size: 25px;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            padding: 20px 0 10px;
+            width: 100%;
+            text-align: left;
+            text-shadow: 1px 1px 1px #000;
+        }
+        .cover .cover-img {
+            position: relative;
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #20232b; /* #242530; */
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+            color: #9a9eb7;
+        }
+        .footer > a {
+            color: #dfe1e8;
+            font-weight: bold;
+        }
+        .footer > a:hover {
+            color: #fff;
+        }
+        .zebra-logo {
+            height: auto;
+            width: 50%;
+            max-width: 135px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover space-bottom">
+        <div class="container container-boxed">
+            <div class="tagline">
+                Great code deserves great documentation...
+            </div>
+            <img class="cover-img" src="img/docma-desk.png" />
+        </div>
+    </div>
+    <div class="content container container-boxed">
+        <div class="row space-bottom-md">
+            <div class="col span-2">
+                <h1 class="no-space-top">What's Docma?</h1>
+
+                Docma is a powerful tool to easily generate beautiful HTML documentation
+                from Javascript (<a href="http://usejsdoc.org" target="_blank" rel="noopener noreferrer">JSDoc</a>),
+                <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener noreferrer">Markdown</a> and HTML files.
+                <br /><br />
+                <h4 class="no-space">Features</h4>
+                <ul>
+                    <li>Parse <b>JSDoc</b> documentation, <b>Markdown</b> and <b>HTML</b> files.</li>
+                    <li>Build a cool <b>SPA</b> (Single Page Application) from parsed files.</li>
+                    <li>Generate multiple/separate API documentations by <b>grouping</b> JS files.</li>
+                    <li>Path or Query-string based app routing.</li>
+                    <li>Non-opinionated engine, <b>built-in template</b> with <a href="templates/zebra">cool opinions</a>. 😎 </li>
+                    <li>Supports custom templates, comes with template authoring tools.</li>
+                    <li>Works great with <b>GitHub Pages</b>, Amazon <b>S3</b>, Nginx, Apache, etc...</li>
+                    <li>Build via <b><a href="api/">API</a></b> or <b><a href="cli/">CLI</a></b>.</li>
+                    <li>Extremely configurable and debuggable.</li>
+                    <li>Well documented. ☝️</li>
+                </ul>
+            </div>
+            <div class="col span-1 well">
+                <div class="space-bottom-md">
+                    <h3 class="no-space-top">Installation</h3>
+                    <p>Install Docma via <a href="https://www.npmjs.com/package/docma" target="_blank" rel="noopener noreferrer">NPM</a>.</p>
+                    <pre><code>npm i docma -D</code></pre>
+                </div>
+                <hr />
+                <div>
+                    <h3 class="no-space-top">Under the Hood</h3>
+                    Docma v2 is written in ES2015 and requires
+                    <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer">Node.js</a> v8 or newer. Docma's own documentation is, of course; built with Docma using the default template, Zebra.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-2">
+                <div class="space-bottom-lg">
+                    <h3 class="no-space-top">Building Documentation via CLI</h3>
+                    <p>You can use Docma CLI to build documentations directly from your console. Once you create the configuration file
+                    <b><code>docma.json</code></b> in your project root, it's quite simple.</p>
+                    <pre><code>docma</code></pre>
+                    <p>You can even serve the docs locally and test.</p>
+                    <pre><code>docma serve</code></pre>
+                    <p>See <a href="cli/">Docma <b>CLI</b> Reference</a>, <a href="api/#Docma~BuildConfiguration">Build Configuration</a> and <a href="faq">Docma F.A.Q.</a> for more information.</p>
+                </div>
+
+                <div class="space-bottom-md">
+                    <h3 class="no-space-top">Building Documentation via API</h3>
+                    <p>If you need to build documentation from within your code, use the API.</p>
+                    <pre><code>const Docma = require('docma');</code></pre>
+                    <p>Either by passing a <a href="api/#Docma~BuildConfiguration">configuration</a> object.</p>
+                    <pre><code>const config = {
+    src: [
+        './code/**/*.js',
+        './README.md'
+    ],
+    dest: './output/docs'
+};
+Docma.create()
+    .build(config)
+    .catch(error => {
+        console.log(error);
+    });</code></pre>
+                    <p>Or by reading <a href="api/#Docma~BuildConfiguration">configuration</a> from a JSON file.</p>
+                    <pre><code>Docma.create()
+    .build('./path/to/docma.json')
+    .catch(error => {
+        console.log(error);
+    });</code></pre>
+                    <p>See <a href="api/">Docma <b>API</b> Reference</a>, <a href="api/#Docma~BuildConfiguration">Build Configuration</a> and <a href="faq">Docma F.A.Q.</a> for more information.</p>
+                </div>
+            </div>
+
+            <div class="col span-1">
+                <div class="well space-bottom-lg">
+                    <h3 class="no-space-top">Docma Templates</h3>
+                    <div class="clearfix">
+                        <a href="templates/zebra/"><img class="zebra-logo snap-left" src="img/zebra-logo.png" /></a>
+                        <p>
+                            Docma includes a built-in template: <b><a href="templates/zebra/">Zebra</a></b>, with a side-bar symbols menu, search and navigation features; and a beautiful layout.
+                            Actually you're viewing it right now ;}
+                        </p>
+                        <p>
+                            You can also build your own template! See <a href="templates/guide/">Creating Docma Templates</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="well space-bottom-lg">
+                    <h3 class="no-space-top">License</h3>
+                    <p>
+                        <a href="https://github.com/onury/docma/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>. You don't have to include any copyright notice in your docs output or templates but I'd appreciate if you
+                        let people know about this tool so we can read better documentations.
+                    </p>
+                    <p>
+                        Emoji shortcuts used in source markdown files are parsed
+                        into <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener noreferrer">twemoji</a>.
+                        Graphics and icons are licensed under <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">CC-BY 4.0</a>.
+                    </p>
+                </div>
+                <p>
+                    <a href="https://www.npmjs.com/package/docma" alt="npm" target="_blank" rel="noopener noreferrer"><img src="http://img.shields.io/npm/v/docma.svg" /></a>
+                    <a href="https://github.com/onury/docma" alt="release" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/release/onury/docma.svg" /></a>
+                    <a href="https://www.npmjs.com/package/docma" alt="downloads" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dt/docma.svg" /></a>
+                    <a href="https://david-dm.org/onury/docma" alt="dependencies" target="_blank" rel="noopener noreferrer"><img src="https://david-dm.org/onury/docma.svg" /></a>
+                    <a href="https://github.com/onury/docma/graphs/commit-activity" alt="dependencies" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/maintenance/yes/2019.svg" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="footer">
+        Built with &#9829; by <a href="https://github.com/onury/docma" target="_blank" rel="noopener noreferrer">Docma</a> &nbsp;•&nbsp;
+        Contribute on <a href="https://github.com/onury/docma" target="_blank" rel="noopener noreferrer">Github</a> &nbsp;•&nbsp;
+        <a href="https://github.com/onury" target="_blank" rel="noopener noreferrer">Other Projects</a>
+    </div>
+
+</body>
+
+</html>
