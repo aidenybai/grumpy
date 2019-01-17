@@ -62,14 +62,14 @@
         <div class="row">
             <div class="col span-2">
                 <div class="space-bottom-md">
-                    <h3 class="no-space-top">Importing wear.</h3>
+                    <h3 class="no-space-top">Importing wear.js</h3>
                     <p>Basically requiring the module and constructing the class.</p>
                     <pre><code>
 const Wear = require('wear');
 const group = new Wear();
                     </code></pre>
                     <br>
-                    <h3 class="no-space-top">Declaring and deleting pairs.</h3>
+                    <h3 class="no-space-top">Declaring and deleting pairs</h3>
                     <p>These are inherited from maps, you can do these in groups too.</p>
                     <pre><code>
 group.set('user', 'John Doe');
@@ -103,6 +103,38 @@ group.lastKey(); // returns 'user3'
 
 group.random(); // returns 'John Doe', 'Mary Jane', or 'Joe Schmoe'
 group.randomKey(); // returns 'user1', 'user2', or 'user3'
+                    </code></pre>
+                    <br>
+                    <h3 class="no-space-top">Concatinating and cloning</h3>
+                    <p>Easily combine and create new groups.</p>
+                    <pre><code>
+group1.set('user1', 'John Doe');
+group2.set('user2', 'Mary Jane');
+group3.set('user3', 'Joe Schmoe');
+
+const group = group1.concat(group2, group3); // returns group {'user1' => 'John Doe', 'user2' => 'Mary Jane', 'user3' => 'Joe Schmoe'}
+const clonedGroup = group.clone();
+                    </code></pre>
+                    <br>
+                    <h3 class="no-space-top">Manipulating groups</h3>
+                    <p>Many of the methods on group are based on their namesake in Array.</p>
+                    <pre><code>
+const wanted = 'John Doe';
+
+group.set('user1', 'John Doe');
+group.set('user2', 'Mary Jane');
+group.set('user3', 'Joe Schmoe');
+
+group.sift(user => user === 'John Doe'); // removes 'Mary Jane' and 'Joe Schmoe' from the group
+group.filter(user => wanted.includes(user)); // returns Group {'user1' => 'John Doe'}
+group.map(user => user).join(', '); // returns 'John Doe, Mary Jane, Joe Schmoe'
+group.sort(); // returns Group {'user3' => 'Joe Schmoe', 'user1' => 'John Doe', 'user2' => 'Mary Jane'}
+
+group.some(user => wanted.includes(user)); // returns true
+group.every(user => user instanceof String); // returns true
+
+group.each(user => console.log(user)); // logs each name in the console
+group.cut(user => user.startsWith('J')); // (1): group {'user1' => 'John Doe', 'user3' => 'Joe Schmoe'}; (2): group {'user2' => 'Mary Jane'}
                     </code></pre>
                 </div>
             </div>
