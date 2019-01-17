@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <style>
+        .cover {
+            max-height: 350px;
+            /* overflow: hidden; */
+            text-align: center;
+            background-color: #20232b; /* #242530; */
+            background-repeat: repeat;
+            margin-top: -50px;
+        }
+        .cover .tagline {
+            display: block;
+            color: #b4bccc;
+            font-size: 25px;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            padding: 20px 0 10px;
+            width: 100%;
+            text-align: left;
+            text-shadow: 1px 1px 1px #000;
+        }
+        .cover .cover-img {
+            position: relative;
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #20232b; /* #242530; */
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+            color: #9a9eb7;
+        }
+        .footer > a {
+            color: #dfe1e8;
+            font-weight: bold;
+        }
+        .footer > a:hover {
+            color: #fff;
+        }
+        .zebra-logo {
+            height: auto;
+            width: 50%;
+            max-width: 135px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content container container-boxed">
+        <div class="row space-bottom-md">
+            <div class="col span-2">
+                <h1 class="no-space-top">What's Wear?</h1>
+
+                Wear is a utility data structure module with significantly improved performance and ease-of-use.
+                <br /><br />
+                <ul>
+                    <li>🎉 Small file size (~1kb)</li>
+                    <li>⚡️ Blazing fast performance</li>
+                    <li>🚀 Minimal & intuitive API</li>
+                </ul>
+            </div>
+            <div class="col span-1 well">
+                <div class="space-bottom-md">
+                    <h3 class="no-space-top">Installation</h3>
+                    <p>Install Wear via <a href="https://www.npmjs.com/package/wear" target="_blank" rel="noopener noreferrer">NPM</a>.</p>
+                    <pre><code>npm i -s wear</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-2">
+                <div class="space-bottom-md">
+                    <h3 class="no-space-top">Usage</h3>
+                    <p>An example on creating and building with wear.</p>
+                    <pre><code>
+const Wear = require('wear');
+const group = new Wear();
+ 
+group.set('foo', 'bar');
+ 
+group.get('foo'); // returns 'bar'
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="col span-1">
+                <p>
+                    <p align="center"><img src="https://img.shields.io/appveyor/ci/gruntjs/grunt.svg">&nbsp;<img src="https://img.shields.io/npm/v/wear.svg?maxAge=3600">&nbsp;<img src="https://img.shields.io/npm/dt/wear.svg?maxAge=3600">&nbsp;<img src="https://img.shields.io/npm/l/wear.svg">&nbsp;<img src="https://badgen.net/bundlephobia/minzip/wear"></p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br />
+</body>
+
+</html>
