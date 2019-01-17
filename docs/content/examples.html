@@ -62,12 +62,16 @@
         <div class="row">
             <div class="col span-2">
                 <div class="space-bottom-md">
-                    <h3 class="no-space-top">Declaring and deleting pairs.</h3>
-                    <p>These are inherited from maps, you can do these in groups too.</p>
+                    <h3 class="no-space-top">Importing wear.</h3>
+                    <p>Basically requiring the module and constructing the class.</p>
                     <pre><code>
 const Wear = require('wear');
 const group = new Wear();
- 
+                    </code></pre>
+                    <br>
+                    <h3 class="no-space-top">Declaring and deleting pairs.</h3>
+                    <p>These are inherited from maps, you can do these in groups too.</p>
+                    <pre><code>
 group.set('user', 'John Doe');
  
 group.get('user'); // returns 'John Doe'
@@ -76,15 +80,29 @@ group.get('user'); // returns 'John Doe'
                     <h3 class="no-space-top">Converting to Array</h3>
                     <p>There are two ways you might want to convert a group into an Array. The first way is the array or keyArray methods. They simply create an array from the items in the group, but also caches it too:</p>
                     <pre><code>
-const Wear = require('wear');
-const group = new Wear();
- 
 group.set('user1', 'John Doe');
 group.set('user2', 'Mary Jane');
 group.set('user3', 'Joe Schmoe');
  
 group.array(); // returns ['John Doe', 'Mary Jane', 'Joe Schmoe']
 group.keyArray(); // returns ['user1', 'user2', 'user3']
+                    </code></pre>
+                    <br>
+                    <h3 class="no-space-top">Getting first, last, and random keys/values</h3>
+                    <p>Great utility functions without needing to rewrite code over and over. The methods have a 'count' parameter to specify how many keys/values you want to fetch.</p>
+                    <pre><code>
+group.set('user1', 'John Doe');
+group.set('user2', 'Mary Jane');
+group.set('user3', 'Joe Schmoe');
+
+group.first(); // returns 'John Doe'
+group.firstKey(); // returns 'user1'
+
+group.last(); // returns 'Joe Schmoe'
+group.lastKey(); // returns 'user3'
+
+group.random(); // returns 'John Doe', 'Mary Jane', or 'Joe Schmoe'
+group.randomKey(); // returns 'user1', 'user2', or 'user3'
                     </code></pre>
                 </div>
             </div>
