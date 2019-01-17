@@ -124,7 +124,7 @@ group.set('user2', 'Mary Jane');
 group.set('user3', 'Joe Schmoe');
 
 group.sift(user => user === 'John Doe'); // removes 'Mary Jane' and 'Joe Schmoe' from the group
-group.filter(user => wanted.includes(user)); // returns Group {'user1' => 'John Doe'}
+group.filter(user => 'John Doe'.includes(user)); // returns Group {'user1' => 'John Doe'}
 group.map(user => user).join(', '); // returns 'John Doe, Mary Jane, Joe Schmoe'
 group.sort(); // returns Group {'user3' => 'Joe Schmoe', 'user1' => 'John Doe', 'user2' => 'Mary Jane'}
 
