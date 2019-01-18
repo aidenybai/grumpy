@@ -112,8 +112,8 @@ group1.set('user1', 'John Doe');
 group2.set('user2', 'Mary Jane');
 group3.set('user3', 'Joe Schmoe');
 
-const group = group1.concat(group2, group3); // returns group {'user1' => 'John Doe', 'user2' => 'Mary Jane', 'user3' => 'Joe Schmoe'}
-const clonedGroup = group.clone();
+group1.concat(group2, group3); // returns group {'user1' => 'John Doe', 'user2' => 'Mary Jane', 'user3' => 'Joe Schmoe'}
+group.clone(); // returns a shallow cloned group.
                     </code></pre>
                     <br>
                     <h3 class="no-space-top">Manipulating groups</h3>
