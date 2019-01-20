@@ -2,11 +2,9 @@
 
 Grumpy is a utility data structure module with significantly improved performance and ease-of-use.
 
-```
-🎉 Small file size (~1kb)  
-⚡️ Blazing fast performance  
-🚀 Minimal & intuitive API
-```
+* 🎉 Small file size (~1kb)  
+* ⚡️ Blazing fast performance  
+* 🚀 Minimal & intuitive API
 
 ## Installation
 
