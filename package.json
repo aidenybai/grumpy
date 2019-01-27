@@ -1,0 +1,23 @@
+{
+  "name": "grumpy",
+  "version": "0.0.4",
+  "description": "Utility data structure with significantly improved performance and ease-of-use.",
+  "main": "./src/index",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cringiest/grumpy.git"
+  },
+  "keywords": [
+    "map",
+    "grumpy",
+    "utility",
+    "array",
+    "easy",
+    "fast",
+    "better",
+    "set"
+  ],
+  "author": "Aiden Bai <mail.contraband@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://grumpy.js.org/"
+}
