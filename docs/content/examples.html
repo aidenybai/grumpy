@@ -115,25 +115,6 @@ group3.set('user3', 'Joe Schmoe');
 group1.concat(group2, group3); // returns group {'user1' => 'John Doe', 'user2' => 'Mary Jane', 'user3' => 'Joe Schmoe'}
 group.clone(); // returns a shallow cloned group.
                     </code></pre>
-                    <br>
-                    <h3 class="no-space-top">Manipulating groups</h3>
-                    <p>Many of the methods on group are based on their namesake in Array.</p>
-                    <pre><code>
-group.set('user1', 'John Doe');
-group.set('user2', 'Mary Jane');
-group.set('user3', 'Joe Schmoe');
-
-group.sift(user => user === 'John Doe'); // removes 'Mary Jane' and 'Joe Schmoe' from the group
-group.filter(user => 'John Doe'.includes(user)); // returns Group {'user1' => 'John Doe'}
-group.map(user => user).join(', '); // returns 'John Doe, Mary Jane, Joe Schmoe'
-group.sort(); // returns Group {'user3' => 'Joe Schmoe', 'user1' => 'John Doe', 'user2' => 'Mary Jane'}
-
-group.some(user => 'John Doe'.includes(user)); // returns true
-group.every(user => user instanceof String); // returns true
-
-group.each(user => console.log(user)); // logs each name in the console
-group.cut(user => user.startsWith('J')); // (1): group {'user1' => 'John Doe', 'user3' => 'Joe Schmoe'}; (2): group {'user2' => 'Mary Jane'}
-                    </code></pre>
                 </div>
             </div>
         </div>
