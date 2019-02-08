@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint src *.js",
-    "lint:fix": "eslint --fix src"
+    "lint:fix": "eslint --fix src",
+    "unit-test": "node test/index.js"
   },
   "repository": {
     "type": "git",
