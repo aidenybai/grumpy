@@ -3,5 +3,16 @@ node_modules/
 yarn.lock
 package-lock.json
 
+# Deploy
+docs/
+test/
+.github/
+
+# License
+LICENSE.txt
+
 # Other
+.npmrc
+.gitignore
+.gitattributes
 .eslintrc.json
