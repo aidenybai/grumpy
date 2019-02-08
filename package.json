@@ -3,6 +3,11 @@
   "version": "0.0.4",
   "description": "Utility data structure with significantly improved performance and ease-of-use.",
   "main": "./src/index",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint src *.js",
+    "lint:fix": "eslint --fix src"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cringiest/grumpy.git"
@@ -19,5 +24,11 @@
   ],
   "author": "Aiden Bai <mail.contraband@gmail.com>",
   "license": "MIT",
-  "homepage": "https://grumpy.js.org/"
+  "homepage": "https://grumpy.js.org/",
+  "devDependencies": {
+    "eslint": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
 }
