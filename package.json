@@ -23,7 +23,7 @@
     "set"
   ],
   "author": "Aiden Bai <mail.contraband@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "homepage": "https://grumpy.js.org/",
   "devDependencies": {
     "eslint": "^5.4.0"
