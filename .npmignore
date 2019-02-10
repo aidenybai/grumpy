@@ -7,12 +7,18 @@ package-lock.json
 docs/
 test/
 .github/
+.travis.yml
 
 # License
 LICENSE.txt
+
+# Config
+.eslintrc.json
+.eslintignore
+tsconfig.json
+tslint.json
 
 # Other
 .npmrc
 .gitignore
 .gitattributes
-.eslintrc.json
