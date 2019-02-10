@@ -3,10 +3,12 @@
   "version": "0.0.4",
   "description": "Utility data structure with significantly improved performance and ease-of-use.",
   "main": "./src/index",
+  "types": "./typings/index.d.ts",
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint src *.js",
     "lint:fix": "eslint --fix src",
+    "lint:typings": "tslint typings/index.d.ts",
     "unit-test": "node test/index.js"
   },
   "repository": {
@@ -27,8 +29,12 @@
   "license": "Apache-2.0",
   "homepage": "https://grumpy.js.org/",
   "devDependencies": {
-    "eslint": "^5.4.0"
-  },
+    "@types/node": "^10.7.1",
+    "eslint": "^5.4.0",
+    "tslint": "^5.11.0",
+    "tslint-config-typings": "^0.3.1",
+    "typescript": "^3.0.1"
+  }
   "engines": {
     "node": ">=8.0.0"
   }
