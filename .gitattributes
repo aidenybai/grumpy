@@ -1,6 +1,1 @@
 * text=auto eol=lf
-
-docs/* linguist-vendored
-src/* linguist-vendored
-test/* linguist-vendored
-typings/* linguist-vendored
