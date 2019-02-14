@@ -1,4 +1,4 @@
-<a href="https://grumpy.js.org" target="_blank"><p align="center"><img src="https://grumpy.js.org/img/grumpy.svg" width="160"><br>&nbsp;<img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=3600">&nbsp;<img src="https://grumpy-installs.glitch.me/">&nbsp;<img src="https://badgen.net/bundlephobia/minzip/grumpy"><br></p></a>
+<a href="https://grumpy.js.org" target="_blank"><p align="center"><img src="https://grumpy.js.org/img/grumpy.svg" width="160"><br>&nbsp;<img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=1200">&nbsp;<img src="https://grumpy-installs.glitch.me/">&nbsp;<img src="https://badgen.net/bundlephobia/minzip/grumpy"><br></p></a>
 
 ## About
 
