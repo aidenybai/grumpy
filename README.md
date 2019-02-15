@@ -3,6 +3,8 @@ Grumpy [![Version](https://img.shields.io/npm/v/grumpy.svg?maxAge=3600 "Version"
 
 Grumpy is a utility data structure module with significantly improved performance and ease-of-use.
 
+## Features
+
 * 🎉 Small file size (~1kb)  
 * ⚡️ Blazing fast performance  
 * 🚀 Minimal & intuitive API
