@@ -1,6 +1,5 @@
-<a href="https://grumpy.js.org" target="_blank"><p align="center"><img src="https://grumpy.js.org/img/grumpy.svg" width="160"><br>&nbsp;<img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=1200">&nbsp;<img src="https://grumpy-installs.glitch.me?maxAge=60">&nbsp;<img src="https://grumpy-installs.glitch.me/size"><br></p></a>
-
-## About
+Grumpy [![Version](https://img.shields.io/npm/v/grumpy.svg?maxAge=3600 "Version")](https://img.shields.io/npm/v/grumpy.svg?maxAge=3600 "Version") [![downloads](https://grumpy-installs.glitch.me "downloads")](https://grumpy-installs.glitch.me "downloads") [![size](https://grumpy-installs.glitch.me/size "size")](https://grumpy-installs.glitch.me/size "size")
+===
 
 Grumpy is a utility data structure module with significantly improved performance and ease-of-use.
 
@@ -16,9 +15,9 @@ npm i -s grumpy
 
 ## Links
 
-- <a target="_blank" href="https://grumpy.js.org/">Website</a>
-- <a target="_blank" href="https://github.com/cringiest/grumpy">Github</a>
-- <a target="_blank" href="https://www.npmjs.com/package/grumpy">NPM</a>
+- [Website](https://grumpy.js.org/ "Website")
+- [Documentation](https://grumpy.js.org/api "Documentation")
+- [Github](https://github.com/cringiest/grumpy "Github")
 
 ## Usage
 
@@ -31,4 +30,4 @@ group.set('key', 'value');
 group.get('key'); // returns 'value'
 ```
 
-<a target="_blank" href="https://grumpy.js.org/examples/">More Examples</a>
+[More Examples](https://grumpy.js.org/examples/ "More Examples")
