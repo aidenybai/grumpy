@@ -2,15 +2,25 @@
 
 <head>
     <style>
-        ::-webkit-scrollbar-thumb{background-color:#313d4f;border-radius:10px}::-webkit-scrollbar-thumb:window-inactive{background-color:transparent}
+        ::-webkit-scrollbar-thumb {
+            background-color: #313d4f;
+            border-radius: 10px
+        }
+        
+        ::-webkit-scrollbar-thumb:window-inactive {
+            background-color: transparent
+        }
+        
         .cover {
             max-height: 350px;
             /* overflow: hidden; */
             text-align: center;
-            background-color: #20232b; /* #242530; */
+            background-color: #20232b;
+            /* #242530; */
             background-repeat: repeat;
             margin-top: -50px;
         }
+        
         .cover .tagline {
             display: block;
             color: #b4bccc;
@@ -23,6 +33,7 @@
             text-align: left;
             text-shadow: 1px 1px 1px #000;
         }
+        
         .cover .cover-img {
             position: relative;
             max-width: 700px;
@@ -30,20 +41,25 @@
             height: auto;
             margin-bottom: 10px;
         }
+        
         .footer {
-            background-color: #20232b; /* #242530; */
+            background-color: #20232b;
+            /* #242530; */
             padding: 15px;
             text-align: center;
             vertical-align: middle;
             color: #9a9eb7;
         }
+        
         .footer > a {
             color: #dfe1e8;
             font-weight: bold;
         }
+        
         .footer > a:hover {
             color: #fff;
         }
+        
         .zebra-logo {
             height: auto;
             width: 50%;
@@ -58,10 +74,22 @@
         <div class="row space-bottom-md">
             <div class="col span-2">
                 <h1 class="no-space-top">What's Grumpy?</h1>
-                <p><img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=3600">&nbsp;<img src="https://grumpy-installs.glitch.me/">&nbsp;<img src="https://grumpy-installs.glitch.me/size"></p>
+                <p>
+                    <img src="https://grumpy.js.org/img/grumpy-npm.svg" width="450">
+                    <br>The better utility data structure.
+                </p>
+                <p>
+                    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/build"></a>
+                    <a href="https://grumpy.js.org" target="_blank"><img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=3600"></a>
+                    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me"></a>
+                    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/size"></a>
+                    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/rating"></a>
+                    <br>
+                </p>
 
                 Grumpy is a utility data structure module with significantly improved performance and ease-of-use.
-                <br /><br />
+                <br />
+                <br />
                 <ul>
                     <li>🎉 Small file size (~1kb)</li>
                     <li>⚡️ Blazing fast performance</li>
@@ -85,9 +113,9 @@
                     <pre><code>
 const Grumpy = require('grumpy');
 const group = new Grumpy();
- 
+
 group.set('foo', 'bar');
- 
+
 group.get('foo'); // returns 'bar'
                     </code></pre>
                 </div>
