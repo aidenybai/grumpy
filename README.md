@@ -1,7 +1,17 @@
-Grumpy [![Version](https://img.shields.io/npm/v/grumpy.svg?maxAge=3600 "Version")](https://img.shields.io/npm/v/grumpy.svg?maxAge=3600 "Version") [![downloads](https://grumpy-installs.glitch.me "downloads")](https://grumpy-installs.glitch.me "downloads") [![size](https://grumpy-installs.glitch.me/size "size")](https://grumpy-installs.glitch.me/size "size")
-===
 
-Grumpy is a utility data structure module with significantly improved performance and ease-of-use.
+<p align="center">
+    <img src="https://grumpy.js.org/img/grumpy-npm.svg" width="450">
+    <br>The better utility data structure.
+</p>
+<p align="center">
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/build"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=3600"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/size"></a>
+    <br>
+</p>
+---
+
 
 ## Features
 
