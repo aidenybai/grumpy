@@ -11,19 +11,6 @@
  * @extends {Map}
  */
 module.exports = class Grumpy extends Map {
-    /**
- * Grumpy v0.0.9
- * Copyright 2019 Aiden Bai
- * Released under the Apache-2.0 License
- * https://grumpy.js.org/
- */
-
-/**
- * A Map with additional utility methods. This is used throughout manylibraries rather than Arrays for anything that has
- * an ID, for significantly improved performance and ease-of-use.
- * @extends {Map}
- */
-module.exports = class Grumpy extends Map {
   constructor(iterable) {
     super(iterable);
 
