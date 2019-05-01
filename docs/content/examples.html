@@ -1,49 +1,107 @@
-Examples
-Grumpy comes with this utility class known as Group. It extends JavaScript's native Map class, so it has all the features of Map and more! 
+<html>
 
-If you're not familiar with Map, read MDN's page on it before continuing. You should be familiar with Array methods as well. We will also be using some ES6 features, so read up here if you do not know what they are. 
+<head>
+    <style>
+        ::-webkit-scrollbar-thumb{background-color:#313d4f !important;border-radius:10px !important}::-webkit-scrollbar-thumb:window-inactive{background-color:transparent !important}
+        .cover {
+            max-height: 350px;
+            /* overflow: hidden; */
+            text-align: center;
+            background-color: #20232b; /* #242530; */
+            background-repeat: repeat;
+            margin-top: -50px;
+        }
+        .cover .tagline {
+            display: block;
+            color: #b4bccc;
+            font-size: 25px;
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            padding: 20px 0 10px;
+            width: 100%;
+            text-align: left;
+            text-shadow: 1px 1px 1px #000;
+        }
+        .cover .cover-img {
+            position: relative;
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background-color: #20232b; /* #242530; */
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+            color: #9a9eb7;
+        }
+        .footer > a {
+            color: #dfe1e8;
+            font-weight: bold;
+        }
+        .footer > a:hover {
+            color: #fff;
+        }
+        .zebra-logo {
+            height: auto;
+            width: 50%;
+            max-width: 135px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
 
-In essence, Map allows for an association between unique keys and their values but lack an iterative interface. For example, how can you transform every value or filter the entries in a Map easily? This is the point of the Group class! 
-
-
-Array-like Methods
-Many of the methods on Group are based on their namesake in Array. One of them is find:
-
-
+<body>
+    <div class="content container container-boxed">
+        <div class="row space-bottom-md">
+            <div class="col span-2">
+                <h1 class="no-space-top">Examples</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-2">
+                <div>
+Grumpy comes with this utility class known as Group. It extends JavaScript's native Map class, so it has all the features of Map and more! <br><br>
+If you're not familiar with Map, read MDN's page on it before continuing. You should be familiar with Array methods as well. We will also be using some ES6 features, so read up here if you do not know what they are. <br><br>
+In essence, Map allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a Map easily? This is the point of the Grumpy class! <br><br><br>
+                    <h3 class="no-space-top">Array-like Methods</h3>
+                    <p>Many of the methods on Group are based on their namesake in Array. One of them is find:</p>
+                    <pre><code>
 array.find(u => u.foo === 'bar');
 group.find(u => u.foo === 'bar');
-                    
-
-
-The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters (value, index, array), where value is the value it iterated to, index is the current index, and array is the array itself. For groups, you would have (value, key, group). Here, value is the same, but key is the key of the value, and the group is the group itself instead. 
-
-Methods that follow this philosophy of staying close to the Array interface are as follows: 
-find
-filter - Note that this returns a Group rather than an Array.
-map - Yet this returns an Array of values instead of a Group!
-every
-some
-reduce
-concat
-sort
-
-Converting to Array
-There are two ways you might want to convert a Group into an Array. The first way is the array or keyArray methods. They simply create an array from the items in the group, but also caches it too:
-
-
+                    </code></pre><br><br>
+The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters (value, index, array), where value is the value it iterated to, index is the current index, and array is the array itself. For groups, you would have (value, key, group). Here, value is the same, but key is the key of the value, and group is the group itself instead.
+<br><br>
+Methods that follow this philosophy of staying close to the Array interface are as follows:
+<br>
+<ul>                   
+    <li><b>find</b></li>
+    <li><b>filter</b> - Note that this returns a Group rather than an Array.</li>
+    <li><b>map</b> - Yet this returns an Array of values instead of a Group!</li>
+    <li><b>every</b></li>
+    <li><b>some</b></li>
+    <li><b>reduce</b></li>
+    <li><b>concat</b></li>
+    <li><b>sort</b></li>
+</ul>
+                    <br>
+                    <h3 class="no-space-top">Converting to Array</h3>
+                    <p>There are two ways you might want to convert a Group into an Array. The first way is the array or keyArray methods. They simply create an array from the items in the group, but also caches it too:</p>
+                    <pre><code>
 group.array();
 group.array(); // Not computed again the second time, it is cached!
 
 group.keyArray();
 group.keyArray(); // Not computed again the second time, it is cached!
-                    
-
-Many people use array way too much! This leads to unneeded caching of data and confusing code. Before you use array or similar, ask yourself if whatever you are trying to do can't be done with the given Map or Group methods or with a for-of loop. 
-
-Extra Utilities
-Some methods are not from Array and are instead completely new to standard JavaScript.
-
-
+                    </code></pre>
+                    <br>
+                    Many people use array way too much! This leads to unneeded caching of data and confusing code. Before you use array or similar, ask yourself if whatever you are trying to do can't be done with the given Map or Group methods or with a for-of loop.
+                    <br><br>
+                    <h3 class="no-space-top">Extra Utilities</h3>
+                    <p>Some methods are not from Array and are instead completely new to standard JavaScript.</p>
+                    <pre><code>
 group.random(); // A random value. Be careful, this uses `array` so caching is done.
 
 group.first(); // The first value.
@@ -54,14 +112,21 @@ group.last(); // Similar to `first`, but from the end. This uses `array`.
 group.last(2);
 
 group.sift(user => user.foo === 'bar'); // Removes from the group anything that meets a criteria.
-                    
-
-A more complicated method is sift, which splits a collection into two, based on certain criteria. You can think of it as two filters, but done at the same time: 
-
-
+                    </code></pre>
+                    <br>
+                    A more complicated method is partition, which splits a collection into two, based on a certain criteria. You can think of it as two filters, but done at the same time:
+                    <br><br>
+                    <pre><code>
 const [foo, bar] = group.partition(user => user.baz);
 
 foo.every(user => user.baz); // Both return true.
 bar.every(user => !user.baz);
-                    
- 
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+</body>
+
+</html>
