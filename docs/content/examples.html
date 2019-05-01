@@ -77,14 +77,14 @@ The interface of the callback function is very similar between the two. For arra
 Methods that follow this philosophy of staying close to the Array interface are as follows:
 <br>
 <ul>                   
-    <li>find</li>
-    <li>filter - Note that this returns a Group rather than an Array.</li>
-    <li>map - Yet this returns an Array of values instead of a Group!</li>
-    <li>every</li>
-    <li>some</li>
-    <li>reduce</li>
-    <li>concat</li>
-    <li>sort</li>
+    <li><b>find</b></li>
+    <li><b>filter</b> - Note that this returns a Group rather than an Array.</li>
+    <li><b>map</b> - Yet this returns an Array of values instead of a Group!</li>
+    <li><b>every</b></li>
+    <li><b>some</b></li>
+    <li><b>reduce</b></li>
+    <li><b>concat</b></li>
+    <li><b>sort</b></li>
 </ul>
                     <br>
                     <h3 class="no-space-top">Converting to Array</h3>
@@ -98,7 +98,7 @@ group.keyArray(); // Not computed again the second time, it is cached!
                     </code></pre>
                     <br>
                     Many people use array way too much! This leads to unneeded caching of data and confusing code. Before you use array or similar, ask yourself if whatever you are trying to do can't be done with the given Map or Group methods or with a for-of loop.
-                    <br>
+                    <br><br>
                     <h3 class="no-space-top">Extra Utilities</h3>
                     <p>Some methods are not from Array and are instead completely new to standard JavaScript.</p>
                     <pre><code>
@@ -115,7 +115,7 @@ group.sift(user => user.foo === 'bar'); // Removes from the group anything that 
                     </code></pre>
                     <br>
                     A more complicated method is partition, which splits a collection into two, based on a certain criteria. You can think of it as two filters, but done at the same time:
-                    <br>
+                    <br><br>
                     <pre><code>
 const [foo, bar] = group.partition(user => user.baz);
 
