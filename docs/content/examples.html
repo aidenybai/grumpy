@@ -69,7 +69,6 @@ In essence, Map allow for an association between unique keys and their values, b
                     <h3 class="no-space-top">Array-like Methods</h3>
                     <p>Many of the methods on Group are based on their namesake in Array. One of them is find:</p>
                     <pre><code>
-// Assume we have an array and group with the same content.
 array.find(u => u.foo === 'bar');
 group.find(u => u.foo === 'bar');
                     </code></pre><br><br>
@@ -88,51 +87,40 @@ Methods that follow this philosophy of staying close to the Array interface are 
     <li>sort</li>
 </ul>
                     <br>
-                    <h3 class="no-space-top">Declaring and deleting pairs</h3>
-                    <p>These are inherited from maps, you can do these in groups too.</p>
-                    <pre><code>
-group.set('user', 'John Doe');
- 
-group.get('user'); // returns 'John Doe'
-                    </code></pre>
-                    <br>
                     <h3 class="no-space-top">Converting to Array</h3>
-                    <p>There are two ways you might want to convert a group into an Array. The first way is the array or keyArray methods. They simply create an array from the items in the group, but also caches it too:</p>
+                    <p>There are two ways you might want to convert a Group into an Array. The first way is the array or keyArray methods. They simply create an array from the items in the group, but also caches it too:</p>
                     <pre><code>
-group.set('user1', 'John Doe');
-group.set('user2', 'Mary Jane');
-group.set('user3', 'Joe Schmoe');
- 
-group.array(); // returns ['John Doe', 'Mary Jane', 'Joe Schmoe']
-group.keyArray(); // returns ['user1', 'user2', 'user3']
+group.array();
+group.array(); // Not computed again the second time, it is cached!
+
+group.keyArray();
+group.keyArray(); // Not computed again the second time, it is cached!
                     </code></pre>
                     <br>
-                    <h3 class="no-space-top">Getting first, last, and random keys/values</h3>
-                    <p>Great utility functions without needing to rewrite code over and over. The methods have a 'count' parameter to specify how many keys/values you want to fetch.</p>
+                    Many people use array way too much! This leads to unneeded caching of data and confusing code. Before you use array or similar, ask yourself if whatever you are trying to do can't be done with the given Map or Group methods or with a for-of loop.
+                    <br>
+                    <h3 class="no-space-top">Extra Utilities</h3>
+                    <p>Some methods are not from Array and are instead completely new to standard JavaScript.</p>
                     <pre><code>
-group.set('user1', 'John Doe');
-group.set('user2', 'Mary Jane');
-group.set('user3', 'Joe Schmoe');
+group.random(); // A random value. Be careful, this uses `array` so caching is done.
 
-group.first(); // returns 'John Doe'
-group.firstKey(); // returns 'user1'
+group.first(); // The first value.
 
-group.last(); // returns 'Joe Schmoe'
-group.lastKey(); // returns 'user3'
+group.first(5); // The first 5 values.
 
-group.random(); // returns 'John Doe', 'Mary Jane', or 'Joe Schmoe'
-group.randomKey(); // returns 'user1', 'user2', or 'user3'
+group.last(); // Similar to `first`, but from the end. This uses `array`.
+group.last(2);
+
+group.sift(user => user.foo === 'bar'); // Removes from the group anything that meets a criteria.
                     </code></pre>
                     <br>
-                    <h3 class="no-space-top">Concatinating and cloning</h3>
-                    <p>Easily combine and create new groups.</p>
+                    A more complicated method is partition, which splits a collection into two, based on a certain criteria. You can think of it as two filters, but done at the same time:
+                    <br>
                     <pre><code>
-group1.set('user1', 'John Doe');
-group2.set('user2', 'Mary Jane');
-group3.set('user3', 'Joe Schmoe');
+const [foo, bar] = group.partition(user => user.baz);
 
-group1.concat(group2, group3); // returns group {'user1' => 'John Doe', 'user2' => 'Mary Jane', 'user3' => 'Joe Schmoe'}
-group.clone(); // returns a shallow cloned group.
+foo.every(user => user.baz); // Both return true.
+bar.every(user => !user.baz);
                     </code></pre>
                 </div>
             </div>
