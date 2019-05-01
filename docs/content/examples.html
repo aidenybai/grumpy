@@ -62,30 +62,30 @@
         </div>
         <div class="row">
             <div class="col span-2">
-                <div class="space-bottom-md">
-Grumpy comes with this utility class known as Group. It extends JavaScript's native Map class, so it has all the features of Map and more! <br>
-If you're not familiar with Map, read MDN's page on it before continuing. You should be familiar with Array methods as well. We will also be using some ES6 features, so read up here if you do not know what they are. <br>
-In essence, Map allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a Map easily? This is the point of the Grumpy class! <br>
+                <div>
+Grumpy comes with this utility class known as Group. It extends JavaScript's native Map class, so it has all the features of Map and more! <br><br>
+If you're not familiar with Map, read MDN's page on it before continuing. You should be familiar with Array methods as well. We will also be using some ES6 features, so read up here if you do not know what they are. <br><br>
+In essence, Map allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a Map easily? This is the point of the Grumpy class! <br><br><br>
                     <h3 class="no-space-top">Array-like Methods</h3>
                     <p>Many of the methods on Group are based on their namesake in Array. One of them is find:</p>
                     <pre><code>
 // Assume we have an array and group with the same content.
 array.find(u => u.foo === 'bar');
 group.find(u => u.foo === 'bar');
-                    </code></pre><br>
-The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters (value, index, array), where value is the value it iterated to, index is the current index, and array is the array itself. For collections, you would have (value, key, collection). Here, value is the same, but key is the key of the value, and collection is the collection itself instead.
-
+                    </code></pre><br><br>
+The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters (value, index, array), where value is the value it iterated to, index is the current index, and array is the array itself. For groups, you would have (value, key, group). Here, value is the same, but key is the key of the value, and group is the group itself instead.
+<br><br>
 Methods that follow this philosophy of staying close to the Array interface are as follows:
-
+<br>
 <ul>                   
-    <li>find<li>
-    <li>filter - Note that this returns a Collection rather than an Array.<li>
-    <li>map - Yet this returns an Array of values instead of a Collection!<li>
-    <li>every<li>
-    <li>some<li>
-    <li>reduce<li>
-    <li>concat<li>
-    <li>sort<li>
+    <li>find</li>
+    <li>filter - Note that this returns a Group rather than an Array.</li>
+    <li>map - Yet this returns an Array of values instead of a Group!</li>
+    <li>every</li>
+    <li>some</li>
+    <li>reduce</li>
+    <li>concat</li>
+    <li>sort</li>
 </ul>
                     <br>
                     <h3 class="no-space-top">Declaring and deleting pairs</h3>
