@@ -114,10 +114,10 @@ group.last(2);
 group.sift(user => user.foo === 'bar'); // Removes from the group anything that meets a criteria.
                     </code></pre>
                     <br>
-                    A more complicated method is partition, which splits a collection into two, based on a certain criteria. You can think of it as two filters, but done at the same time:
+                    A more complicated method is sift, which splits a group into two, based on a certain criteria. You can think of it as two filters, but done at the same time:
                     <br><br>
                     <pre><code>
-const [foo, bar] = group.partition(user => user.baz);
+const [foo, bar] = group.sift(user => user.baz);
 
 foo.every(user => user.baz); // Both return true.
 bar.every(user => !user.baz);
