@@ -58,11 +58,11 @@
         <div class="row">
             <div class="col span-3">
                 <div>
-<h1 class="no-space-top zebra-bookmark">Examples</h1><br>
+<h1 class="no-space-top zebra-bookmark">Examples</h1>
 Grumpy comes with this utility class known as <code>Group</code>. It extends JavaScript's native <code>Map</code> class, so it has all the features of <code>Map</code> and more! <br><br>
 <blockquote>
 If you're not familiar with <code>Map</code>, read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map">MDN's page on it</a> before continuing. You should be familiar with <code>Array</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">methods</a> as well. We will also be using some ES6 features, so read up on it if you do not know what they are. 
-</blockquote><br><br>
+</blockquote>
 In essence, <code>Map</code> allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a <code>Map</code> easily? This is the point of the <code>Group</code> class! <br><br><br>
                     <h3 class="no-space-top zebra-bookmark">Array-like Methods</h3>
                     <p>Many of the methods on <code>Group</code> are based on their namesake in <code>Array</code>. One of them is <code>find</code>:</p>
@@ -98,7 +98,6 @@ group.keyArray(); // Not computed again the second time, it is cached!
                     <blockquote>
                     Many people use <code>array</code> way too much! This leads to unneeded caching of data and confusing code. Before you use <code>array</code> or similar, ask yourself if whatever you are trying to do can't be done with the given <code>Map</code> or <code>Group</code> methods or with a for-of loop.
                     </blockquote>
-                    <br><br>
                     <h3 class="no-space-top zebra-bookmark">Extra Utilities</h3>
                     <p>Some methods are not from <code>Array</code> and are instead completely new to standard JavaScript.</p>
                     <pre><code>
@@ -113,7 +112,6 @@ group.last(2);
 
 group.sift(user => user.foo === 'bar'); // Removes from the group anything that meets a criteria.
                     </code></pre>
-                    <br>
                     A more complicated method is <code>sift</code>, which splits a group into two, based on a certain criteria. You can think of it as two <code>filter</code>s, but done at the same time:
                     <br><br>
                     <pre><code>
