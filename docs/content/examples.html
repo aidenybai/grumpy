@@ -63,32 +63,32 @@
         <div class="row">
             <div class="col span-3">
                 <div>
-Grumpy comes with this utility class known as Group. It extends JavaScript's native Map class, so it has all the features of Map and more! <br><br>
-If you're not familiar with Map, read MDN's page on it before continuing. You should be familiar with Array methods as well. We will also be using some ES6 features, so read up here if you do not know what they are. <br><br>
-In essence, Map allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a Map easily? This is the point of the Grumpy class! <br><br><br>
+Grumpy comes with this utility class known as <code>Group</code>. It extends JavaScript's native <code>Map</code> class, so it has all the features of <code>Map</code> and more! <br><br>
+If you're not familiar with <code>Map</code>, read MDN's page on it before continuing. You should be familiar with <code>Array</code> methods as well. We will also be using some ES6 features, so read up on it if you do not know what they are. <br><br>
+In essence, <code>Map</code> allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a <code>Map</code> easily? This is the point of the <code>Group</code> class! <br><br><br>
                     <h3 class="no-space-top">Array-like Methods</h3>
-                    <p>Many of the methods on Group are based on their namesake in Array. One of them is find:</p>
+                    <p>Many of the methods on <code>Group</code> are based on their namesake in <code>Array</code>. One of them is <code>find</code>:</p>
                     <pre><code>
-array.find(u => u.foo === 'bar');
-group.find(u => u.foo === 'bar');
+array.find(user => user.foo === 'bar');
+group.find(user => user.foo === 'bar');
                     </code></pre><br><br>
-The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters (value, index, array), where value is the value it iterated to, index is the current index, and array is the array itself. For groups, you would have (value, key, group). Here, value is the same, but key is the key of the value, and group is the group itself instead.
+The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters <code>(value, index, array)</code>, where <code>value</code> is the value it iterated to, <code>index</code> is the current index, and <code>array</code> is the array itself. For groups, you would have <code>(value, key, group)</code>. Here, <code>value</code> is the same, but <code>key</code> is the key of the value, and <code>group</code> is the group itself instead.
 <br><br>
-Methods that follow this philosophy of staying close to the Array interface are as follows:
+Methods that follow this philosophy of staying close to the <code>Array</code> interface are as follows:
 <br>
 <ul>                   
-    <li><b>find</b></li>
-    <li><b>filter</b> - Note that this returns a Group rather than an Array.</li>
-    <li><b>map</b> - Yet this returns an Array of values instead of a Group!</li>
-    <li><b>every</b></li>
-    <li><b>some</b></li>
-    <li><b>reduce</b></li>
-    <li><b>concat</b></li>
-    <li><b>sort</b></li>
+    <li><code>find</code></li>
+    <li><code>filter</code> - Note that this returns a <code>Group</code> rather than an <code>Array</code>.</li>
+    <li><code>map</code> - Yet this returns an <code>Array</code> of values instead of a <code>Group</code>!</li>
+    <li><code>every</code></li>
+    <li><code>some</code></li>
+    <li><code>reduce</code></li>
+    <li><code>concat</code></li>
+    <li><code>sort</code></li>
 </ul>
                     <br>
                     <h3 class="no-space-top">Converting to Array</h3>
-                    <p>There are two ways you might want to convert a Group into an Array. The first way is the array or keyArray methods. They simply create an array from the items in the group, but also caches it too:</p>
+                    <p>There are two ways you might want to convert a <code>Group</code> into an <code>Array</code>. The first way is the <code>array</code> or <code>keyArray</code> methods. They simply create an array from the items in the group, but also caches it too:</p>
                     <pre><code>
 group.array();
 group.array(); // Not computed again the second time, it is cached!
@@ -97,10 +97,10 @@ group.keyArray();
 group.keyArray(); // Not computed again the second time, it is cached!
                     </code></pre>
                     <br>
-                    Many people use array way too much! This leads to unneeded caching of data and confusing code. Before you use array or similar, ask yourself if whatever you are trying to do can't be done with the given Map or Group methods or with a for-of loop.
+                    Many people use <code>array</code> way too much! This leads to unneeded caching of data and confusing code. Before you use <code>array</code> or similar, ask yourself if whatever you are trying to do can't be done with the given <code>Map</code> or <code>Group</code> methods or with a for-of loop.
                     <br><br>
                     <h3 class="no-space-top">Extra Utilities</h3>
-                    <p>Some methods are not from Array and are instead completely new to standard JavaScript.</p>
+                    <p>Some methods are not from <code>Array</code> and are instead completely new to standard JavaScript.</p>
                     <pre><code>
 group.random(); // A random value. Be careful, this uses `array` so caching is done.
 
@@ -114,7 +114,7 @@ group.last(2);
 group.sift(user => user.foo === 'bar'); // Removes from the group anything that meets a criteria.
                     </code></pre>
                     <br>
-                    A more complicated method is sift, which splits a group into two, based on a certain criteria. You can think of it as two filters, but done at the same time:
+                    A more complicated method is <code>sift</code>, which splits a group into two, based on a certain criteria. You can think of it as two <code>filter</code>s, but done at the same time:
                     <br><br>
                     <pre><code>
 const [foo, bar] = group.sift(user => user.baz);
