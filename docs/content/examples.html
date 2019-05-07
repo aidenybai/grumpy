@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col span-3">
                 <div>
-<h1 class="no-space-top">Examples</h1>
+<h1 class="no-space-top">Examples</h1><br>
 Grumpy comes with this utility class known as <code>Group</code>. It extends JavaScript's native <code>Map</code> class, so it has all the features of <code>Map</code> and more! <br><br>
 If you're not familiar with <code>Map</code>, read MDN's page on it before continuing. You should be familiar with <code>Array</code> methods as well. We will also be using some ES6 features, so read up on it if you do not know what they are. <br><br>
 In essence, <code>Map</code> allow for an association between unique keys and their values, but lack an iterative interface. For example, how can you transform every value or filter the entries in a <code>Map</code> easily? This is the point of the <code>Group</code> class! <br><br><br>
@@ -67,7 +67,7 @@ In essence, <code>Map</code> allow for an association between unique keys and th
                     <pre><code>
 array.find(user => user.foo === 'bar');
 group.find(user => user.foo === 'bar');
-                    </code></pre><br><br>
+                    </code></pre><br>
 The interface of the callback function is very similar between the two. For arrays, callbacks are usually passed the parameters <code>(value, index, array)</code>, where <code>value</code> is the value it iterated to, <code>index</code> is the current index, and <code>array</code> is the array itself. For groups, you would have <code>(value, key, group)</code>. Here, <code>value</code> is the same, but <code>key</code> is the key of the value, and <code>group</code> is the group itself instead.
 <br><br>
 Methods that follow this philosophy of staying close to the <code>Array</code> interface are as follows:
