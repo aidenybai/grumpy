@@ -4,12 +4,13 @@ declare class Grumpy<K, V> extends Map<K, V> {
 
 	public array(): V[];
 	public clone(): Grumpy<K, V>;
-	public concat(...groups: Grumpy<K, V>[]): Grumpy<K, V>;
-  	public cut(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean): [Grumpy<K, V>, Grumpy<K, V>];
+  public concat(...groups: Grumpy<K, V>[]): Grumpy<K, V>;
+  public cut(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean): [Grumpy<K, V>, Grumpy<K, V>];
 	public each(fn: (value: V, key: K, group: Grumpy<K, V>) => void, thisArg?: any): Grumpy<K, V>;
 	public equals(group: Grumpy<any, any>): boolean;
 	public every(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean, thisArg?: any): boolean;
 	public filter(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean, thisArg?: any): Grumpy<K, V>;
+	public find(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean): V;
 	public first(): V | undefined;
 	public first(count: number): V[];
 	public firstKey(): K | undefined;
@@ -26,9 +27,9 @@ declare class Grumpy<K, V> extends Map<K, V> {
 	public randomKey(): K | undefined;
 	public randomKey(count: number): K[];
 	public reduce<T>(fn: (accumulator: T, value: V, key: K, group: Grumpy<K, V>) => T, initialValue?: T): T;
- 	public sift(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean, thisArg?: any): number;
 	public some(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean, thisArg?: any): boolean;
 	public sort(compareFunction?: (a: V, b: V, c?: K, d?: K) => number): Grumpy<K, V>;
+	public sift(fn: (value: V, key: K, group: Grumpy<K, V>) => boolean, thisArg?: any): number;
 }
 
 export = Grumpy;
