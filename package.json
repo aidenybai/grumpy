@@ -1,15 +1,12 @@
 {
   "name": "grumpy",
-  "version": "0.0.4",
-  "description": "Utility data structure with significantly improved performance and ease-of-use.",
-  "main": "./src/index",
-  "types": "./typings/index.d.ts",
+  "version": "0.1.3",
+  "description": "Feature-rich utility data structure with low overhead.",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint src *.js",
-    "lint:fix": "eslint --fix src",
-    "lint:typings": "tslint typings/index.d.ts",
-    "unit-test": "node test/index.js"
+    "lint": "eslint ./",
+    "lint:typings": "tslint index.d.ts"
   },
   "repository": {
     "type": "git",
@@ -25,17 +22,20 @@
     "better",
     "set"
   ],
-  "author": "Aiden Bai <mail.contraband@gmail.com>",
+  "author": "Aiden Bai <mail.contraband@gmail.com> (https://bai.js.org/)",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cringiest/grumpy/issues"
+  },
   "homepage": "https://grumpy.js.org/",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "devDependencies": {
     "@types/node": "^10.7.1",
     "eslint": "^5.4.0",
     "tslint": "^5.11.0",
     "tslint-config-typings": "^0.3.1",
     "typescript": "^3.0.1"
-  },
-  "engines": {
-    "node": ">=8.0.0"
   }
 }
