@@ -1,6 +1,6 @@
 {
   "name": "grumpy",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Feature-rich utility data structure with low overhead.",
   "main": "index.js",
   "types": "index.d.ts",
