@@ -4,11 +4,11 @@
     <br>The better utility data structure.
 </p>
 <p align="center">
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/build"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://img.shields.io/npm/v/grumpy.svg?maxAge=3600"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/size"></a>
-	<a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-installs.glitch.me/rating"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/build"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/version"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/install"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/size"></a>
+    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/rating"></a>
     <br>
 </p>
 
