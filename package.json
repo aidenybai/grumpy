@@ -1,12 +1,13 @@
 {
   "name": "grumpy",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Feature-rich utility data structure with low overhead.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.min.js",
+  "types": "typings/index.d.ts",
   "scripts": {
-    "lint": "eslint ./",
-    "lint:typings": "tslint index.d.ts"
+    "build": "babel src/index.js --out-file dist/index.min.js",
+    "start": "babel src/index.js --watch --out-file dist/index.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,11 @@
     "easy",
     "fast",
     "better",
-    "set"
+    "set",
+    "structure",
+    "data",
+    "hashmap",
+    "list"
   ],
   "author": "Aiden Bai <mail.contraband@gmail.com> (https://bai.js.org/)",
   "license": "Apache-2.0",
@@ -29,13 +34,14 @@
   },
   "homepage": "https://grumpy.js.org/",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=6.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "@types/node": "^10.7.1",
-    "eslint": "^5.4.0",
-    "tslint": "^5.11.0",
-    "tslint-config-typings": "^0.3.1",
+    "babel-preset-minify": "^0.5.0",
     "typescript": "^3.0.1"
   }
 }
