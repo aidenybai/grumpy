@@ -2,11 +2,11 @@
   "name": "grumpy",
   "version": "0.1.6",
   "description": "Feature-rich utility data structure with low overhead.",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "types": "typings/index.d.ts",
   "scripts": {
-    "build": "babel src/index.js --out-file dist/index.min.js",
-    "start": "babel src/index.js --watch --out-file dist/index.min.js",
+    "build": "babel src --out-dir dist",
+    "start": "babel src --watch --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
