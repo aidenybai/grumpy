@@ -1,14 +1,13 @@
-
 <p align="center">
-    <img src="https://grumpy.js.org/img/grumpy-npm.svg" width="450">
-    <br>The better utility data structure.
+    <img src="https://grumpy.js.org/img/grumpy-npm.svg" width="430">
+    <br>Feature-rich utility data structure with low overhead.
 </p>
 <p align="center">
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/build"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/version"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/install"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/size"></a>
-    <a href="https://grumpy.js.org" target="_blank"><img src="https://grumpy-data.glitch.me/rating"></a>
+    <img src="https://grumpy-data.glitch.me/build">
+    <img src="https://grumpy-data.glitch.me/version">
+    <img src="https://grumpy-data.glitch.me/install">
+    <img src="https://grumpy-data.glitch.me/size">
+    <img src="https://grumpy-data.glitch.me/rating">
     <br>
 </p>
 
@@ -20,11 +19,18 @@
 
 ## Installation
 
+NodeJS
 ```bash
-npm i -s grumpy
+$ yarn add grumpy
 ```
 
-## Links
+Browser
+```html
+<script src="http://unpkg.com/grumpy/dist/index.min.js"></script>
+```
+
+
+## Resources
 
 - [Website](https://grumpy.js.org/ "Website")
 - [Documentation](https://grumpy.js.org/api "Documentation")
@@ -33,7 +39,7 @@ npm i -s grumpy
 ## Usage
 
 ```js
-const Grumpy = require('grumpy');
+import Grumpy from 'grumpy';
 const group = new Grumpy();
 
 group.set('key', 'value');
