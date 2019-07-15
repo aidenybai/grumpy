@@ -96,7 +96,6 @@ class Grumpy extends Map {
 
 		count = Math.min(this.size, count);
 
-		console.log(count);
 		const arr = [ count ];
 		const iter = this.values();
 
@@ -413,6 +412,12 @@ class Grumpy extends Map {
 		if (!group) return false;
 		if (this === group) return true;
 		if (this.size !== group.size) return false;
+		for (const [ key, value ] of this) {
+			if (!group.has(key) || value !== group.get(key)) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	/**
@@ -423,14 +428,12 @@ class Grumpy extends Map {
    * according to the string conversion of each element.
    * @returns {Group}
    */
-	sort(compareFunction: any) {
-		const entries = [ ...this.entries() ];
-		entries.sort(compareFunction);
-		this.clear();
-		for (const [ key, val ] of entries) {
-			this.set(key, val);
-		}
-		return this;
+	sort(compareFunction: any = (a: any, b: any) => +(a > b) || +(a === b) - 1) {
+		return new Grumpy(
+			[ ...this.entries() ].sort((a, b) => {
+				return compareFunction(a[1], b[1], a[0], b[0]);
+			})
+		);
 	}
 }
 
