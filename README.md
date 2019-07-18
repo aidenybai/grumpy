@@ -24,12 +24,6 @@ NodeJS
 $ yarn add grumpy
 ```
 
-Browser
-```html
-<script src="http://unpkg.com/grumpy/dist/index.min.js"></script>
-```
-
-
 ## Resources
 
 - [Website](https://grumpy.js.org/ "Website")
