@@ -7,7 +7,7 @@
 
 > Grumpy is a NodeJS library which provides a painless way to deal with key-value storage. It's much more efficient than Object/Array hashmaps because it is based off of Javascript's built in [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) class. 
 
-##### What Grumpy do?
+##### What does Grumpy do?
 
 Most things that you can do manually in the browser can be done using Puppeteer! Here are a few examples to get you started:
 
