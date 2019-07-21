@@ -3,11 +3,11 @@
     <br>Feature-rich utility data structure with low overhead.
 </p>
 <p align="center">
-    <img src="https://grumpy-data.glitch.me/build">
-    <img src="https://grumpy-data.glitch.me/version">
-    <img src="https://grumpy-data.glitch.me/install">
-    <img src="https://grumpy-data.glitch.me/size">
-    <img src="https://grumpy-data.glitch.me/rating">
+    <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat">
+    <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat">
+    <img src="https://badgen.net/bundlephobia/minzip/grumpy?color=purple&style=flat">
+	<img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
+    <img src="https://badgen.net/npm/license/grumpy?color=purple&style=flat">
     <br>
 </p>
 
