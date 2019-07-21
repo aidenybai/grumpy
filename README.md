@@ -3,10 +3,10 @@
     <br>Feature-rich utility data structure with low overhead.
 </p>
 <p align="center">
-    <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
     <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat">
     <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat">
     <img src="https://badgen.net/badge/size/1.1%20MB/purple">
+    <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
     <img src="https://badgen.net/npm/license/grumpy?color=purple&style=flat">
     <br>
 </p>
