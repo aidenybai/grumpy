@@ -9,7 +9,7 @@
 
 ##### What does Grumpy do?
 
-Most things that you can do manually in the browser can be done using Puppeteer! Here are a few examples to get you started:
+Most things that you can do with `Array` and `Map` can be done using Grumpy! Here are a few examples to get you started:
 
 * Add/remove sets of values in a scoped `Group`.
 * Convert `Groups` into other data structures.
@@ -18,9 +18,9 @@ Most things that you can do manually in the browser can be done using Puppeteer!
 
 ##### Why should I use Grumpy?
 
-* Small file size (~1kb)  
-* Blazing fast performance  
-* Minimal & intuitive API
+* Small file size (~1kb).
+* Blazing fast performance.
+* Minimal & intuitive API.
 
 Try it out here: [https://npm.runkit.com/grumpy](https://npm.runkit.com/grumpy)
 
