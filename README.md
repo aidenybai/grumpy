@@ -1,7 +1,7 @@
 # Grumpy
 <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20MB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/license/grumpy?color=purple&style=flat">
 
-<img src="https://grumpy.js.org/img/grumpy.svg" height="170" align="right">
+<img src="https://grumpy.js.org/img/grumpy.svg" height="150" align="right">
 
 ##### [API](https://grumpy.js.org/api) | [Install](https://yarn.pm/grumpy) | [Github](https://github.com/cringiest/grumpy)
 
