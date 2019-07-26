@@ -1,5 +1,5 @@
 # Grumpy
-<img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20MB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/license/grumpy?color=purple&style=flat">
+<img src="https://cdn.jsdelivr.net/gh/aidenybai/grumpy@master/docs/img/grumpy-badge.svg"> <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20MB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/license/grumpy?color=purple&style=flat">
 
 <img src="https://grumpy.js.org/img/grumpy.svg" height="150" align="right">
 
