@@ -1,19 +1,21 @@
 {
   "name": "grumpy",
-  "version": "0.1.7",
+  "version": "0.2.3",
   "description": "Feature-rich utility data structure with low overhead.",
   "main": "dist/index.js",
-  "types": "typings/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "babel src --out-dir dist",
-    "start": "babel src --watch --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "del-cli dist && yarn pretty && r ollup-c && yarn minify && del-cli dist/index-cjs.js && yarn test",
+    "minify": "uglifyjs dist/index-cjs.js --compress --mangle > dist/index.js",
+    "pretty": "prettier --write \"src/*.ts\"",
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cringiest/grumpy.git"
+    "url": "git+https://github.com/aidenybai/grumpy.git"
   },
   "keywords": [
+    "🔑",
     "map",
     "grumpy",
     "utility",
@@ -27,21 +29,21 @@
     "hashmap",
     "list"
   ],
-  "author": "Aiden Bai <mail.contraband@gmail.com> (https://bai.js.org/)",
-  "license": "Apache-2.0",
+  "author": "Aiden Bai <aidenybai@gmail.com> (https://bai.js.org/)",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cringiest/grumpy/issues"
+    "url": "https://github.com/aidenybai/grumpy/issues"
   },
   "homepage": "https://grumpy.js.org/",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6.4.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@types/node": "^10.7.1",
-    "babel-preset-minify": "^0.5.0",
-    "typescript": "^3.0.1"
+    "del-cli": "^2.0.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.17.0",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "typescript": "^3.5.3",
+    "uglify-es": "^3.3.9"
   }
 }
