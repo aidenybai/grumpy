@@ -1,0 +1,32 @@
+declare class Grumpy extends Map {
+    private _array;
+    private _keyArray;
+    constructor(iterable?: any[]);
+    set(key: any, value: any, time?: number): any;
+    delete(key: any, time?: number): any;
+    array(): any[];
+    keyArray(): any[];
+    first(count?: number): any;
+    firstKey(count?: number): any;
+    last(count?: number): any;
+    lastKey(count?: number): any;
+    random(count?: number): any;
+    randomKey(count?: number): any;
+    find(fn: Function, thisArg?: any): any;
+    sift(fn: Function, thisArg?: any): number;
+    filter(fn: Function, thisArg?: any): Grumpy;
+    map(fn: Function, thisArg?: any): any[];
+    mapValues(fn: Function, thisArg?: any): any[];
+    some(fn: Function, thisArg?: any): boolean;
+    every(fn: Function, thisArg?: any): boolean;
+    flatMap(fn: Function, thisArg?: any): Grumpy;
+    reduce(fn: Function, initialValue?: any): any;
+    each(fn: any, thisArg?: any): Grumpy;
+    clone(): Grumpy;
+    concat(...groups: any): Grumpy;
+    cut(fn: Function, thisArg?: any): Grumpy[];
+    equals(group: any): boolean;
+    sort(compareFunction?: any): Grumpy;
+    sorted(compareFunction?: any): Grumpy;
+}
+export default Grumpy;
