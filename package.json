@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "del-cli dist && yarn pretty && r ollup-c && yarn minify && del-cli dist/index-cjs.js && yarn test",
+    "build": "del-cli dist && yarn pretty && rollup -c && yarn minify && del-cli dist/index-cjs.js && yarn test",
     "minify": "uglifyjs dist/index-cjs.js --compress --mangle > dist/index.js",
     "pretty": "prettier --write \"src/*.ts\"",
     "test": "node test/index.js"

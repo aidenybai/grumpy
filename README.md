@@ -1,7 +1,7 @@
 # Grumpy
-<img src="https://cdn.jsdelivr.net/gh/aidenybai/grumpy@master/docs/img/grumpy-badge.svg" height="20"> <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20MB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/license/grumpy?color=purple&style=flat">
+<img src="https://badgen.net/travis/aidenybai/grumpy?color=purple&style=flat" height="20"> <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20MB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
 
-<img src="https://grumpy.js.org/img/grumpy.svg" height="150" align="right">
+<img src="https://cdn.jsdelivr.net/gh/aidenybai/grumpy@master/docs/img/grumpy.svg" height="130" align="right">
 
 ##### [API](https://grumpy.js.org/api) | [Install](https://yarn.pm/grumpy) | [Github](https://github.com/cringiest/grumpy)
 
@@ -37,7 +37,7 @@ npm install grumpy
 ### Usage
 Note: Grumpy requires at least `Node v6.4.0`.
 
-Create an instance of Grumpy and manipulate the group. We're going to be assigning `'key'` to `'value'` and fetching and checking it once we've set it.
+Create an instance of Grumpy and manipulate the group. We're going to be assigning `key` to `value` and fetching and checking it once we've set it.
 
 **Example** - Getting and setting values
 
