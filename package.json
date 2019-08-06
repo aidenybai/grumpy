@@ -1,7 +1,7 @@
 {
   "name": "grumpy",
-  "version": "0.2.3",
-  "description": "Feature-rich utility data structure with low overhead.",
+  "version": "0.2.4",
+  "description": "Painless key-value storage.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

@@ -24,14 +24,14 @@ Most things that you can do with `Array` and `Map` can be done using Grumpy! Her
 
 Try it out here: [https://npm.runkit.com/grumpy](https://npm.runkit.com/grumpy)
 
+## Getting Started
+
 ### Installation
 
+To use Grumpy in your project, run:
 ```bash
-# Using yarn
 yarn add grumpy
-
-# Using npm
-npm install grumpy
+# or "npm install grumpy"
 ```
 
 ### Usage
