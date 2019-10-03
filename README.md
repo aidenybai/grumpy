@@ -1,5 +1,5 @@
 # Grumpy
-<img src="https://badgen.net/travis/aidenybai/grumpy?color=purple&style=flat" height="20"> <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20MB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
+<img src="https://badgen.net/travis/aidenybai/grumpy?color=purple&style=flat" height="20"> <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20KB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
 
 <img src="https://cdn.jsdelivr.net/gh/aidenybai/grumpy@master/docs/img/grumpy.svg" height="130" align="right">
 
