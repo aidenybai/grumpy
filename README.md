@@ -1,3 +1,5 @@
+> This was originally a TypeScript port with extra features of [`@discordjs/collection`](https://github.com/discordjs/collection) when it was written in JavaScript and integrated into the monorepo. **Please do not use this package**, use [`@discordjs/collection`](https://github.com/discordjs/collection) for a maintained version.
+
 # Grumpy
 <img src="https://badgen.net/travis/aidenybai/grumpy?color=purple&style=flat" height="20"> <img src="https://badgen.net/npm/v/grumpy?color=purple&style=flat"> <img src="https://badgen.net/npm/dt/grumpy?color=purple&style=flat"> <img src="https://badgen.net/badge/size/1.1%20KB/purple?style=flat"> <img src="https://badgen.net/david/dep/cringiest/grumpy?color=purple&style=flat">
 
@@ -5,7 +7,7 @@
 
 ##### [API](https://grumpy.js.org/api) | [Install](https://yarn.pm/grumpy) | [Github](https://github.com/cringiest/grumpy)
 
-> Grumpy is a NodeJS library which provides a painless way to deal with key-value storage. It's much more efficient than Object/Array hashmaps because it is based off of Javascript's built in [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) class. 
+> Grumpy is a NodeJS library which provides a painless way to deal with key-value storage. It's much more efficient than Object/Array hashmaps because it is based off of Javascript's built in [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) class.
 
 ##### What does Grumpy do?
 
